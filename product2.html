@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Detail Produk</h1>
+        <div class="cart-button">
+            <button onclick="window.location.href='cart.html'">Lihat Keranjang</button>
+            <button onclick="window.location.href='homepage.html'">Beranda</button>
+        </div>
+    </header>
+
+    <div class="product-detail-container">
+        <img src="standart_case.jpg" alt="Casing Smartphone A" class="product-image">
+        <div class="product-info">
+            <h2>Casing Standart Custom</h2>
+            <p>Softcase Handphone standart model dengan berbagai macam pilihan warna.</p>
+            <strong>Harga: Rp 25.000</strong>
+        </div>
+        <button class="checkout-button" onclick="addToCart('Casing Standart Custom', 25000, 'standart_case.jpg')">Tambahkan ke Keranjang</button>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Produk berhasil ditambahkan ke keranjang!</div>
+    
+    <footer>
+        <p>&copy; 2024 RF Casing. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

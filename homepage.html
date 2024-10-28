@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF Casing E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>RF CASING</h1>
+        <p>Selamat datang di website kami, segera pilih case favoritmu!</p>
+        <div class="cart-button">
+            <button onclick="window.location.href='cart.html'">Lihat Keranjang</button>
+            <button onclick="window.location.href='about.html'">Tentang</button>
+            <button onclick="window.location.href='login.html'">Keluar</button>
+        </div>
+    </header>
+    <main>
+        <section class="product-list">
+            <h2>Ini adalah halaman beranda kami. Anda bisa menemukan banyak informasi menarik di sini!</h2>
+            <img src="welcome.jpg" alt="Gambar 1" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+            <article class="product">
+                <a href="product.html">
+                    <img src="beranda2_img.jpg" alt="Casing Panda Hitam Putih">
+                    <h2>Casing Panda Hitam Putih</h2>
+                    <p>Softcase Handphone bentuk Panda yang lucu dengan warna hitam dan putih.</p>
+                    <strong>Harga: Rp 30.000</strong>
+                </a>
+                <button class="add-to-cart-button" onclick="addToCart('Casing Panda Hitam Putih', 30000, 'beranda2_img.jpg')">Tambahkan ke Keranjang</button>
+            </article>
+            <article class="product">
+                <a href="product2.html">
+                    <img src="standart_case.jpg" alt="Casing Standart Custom">
+                    <h2>Casing Standart Custom</h2>
+                    <p>Softcase Handphone standart model dengan berbagai macam pilihan warna.</p>
+                    <strong>Harga: Rp 25.000</strong>
+                </a>
+                <button class="add-to-cart-button" onclick="addToCart('Casing Standart Custom', 25000, 'standart_case.jpg')">Tambahkan ke Keranjang</button>
+            </article>
+            <article class="product">
+                <a href="product3.html">
+                    <img src="beranda3.jpg" alt="Softcase Custom Cinnamon">
+                    <h2>Softcase Custom Cinnamon</h2>
+                    <p>Softcase Handphone bentuk Cinnamon yang lucu dengan berbagai warna.</p>
+                    <strong>Harga: Rp 30.000</strong>
+                </a>
+                <button class="add-to-cart-button" onclick="addToCart('Softcase Custom Cinnamon', 30000, 'beranda3.jpg')">Tambahkan ke Keranjang</button>
+            </article>
+            <article class="product">
+                <a href="product4.html">
+                    <img src="beranda4.jpg" alt="Softcase Slide Camera Cinnamon">
+                    <h2>Softcase Slide Camera Cinnamon</h2>
+                    <p>Softcase Handphone bentuk Cinnamon yang lucu dengan slide camera.</p>
+                    <strong>Harga: Rp 35.000</strong>
+                </a>
+                <button class="add-to-cart-button" onclick="addToCart('Softcase Slide Camera Cinnamon', 35000, 'beranda4.jpg')">Tambahkan ke Keranjang</button>
+            </article>
+            <article class="product">
+                <a href="product5.html">
+                    <img src="beranda5.jpg" alt="Softcase Custom Cinnamon Premium">
+                    <h2>Softcase Custom Cinnamon Premium</h2>
+                    <p>Softcase Handphone bentuk Cinnamon dengan berbagai warna premium.</p>
+                    <strong>Harga: Rp 40.000</strong>
+                </a>
+                <button class="add-to-cart-button" onclick="addToCart('Softcase Custom Cinnamon Premium', 40000, 'beranda5.jpg')">Tambahkan ke Keranjang</button>
+            </article>
+            <article class="product">
+                <a href="produk6.html">
+                    <img src="beranda6.jpg" alt="Softcase Cinnamon Transparant">
+                    <h2>Softcase Cinnamon Transparant</h2>
+                    <p>Softcase Handphone bentuk Cinnamon yang lucu dengan berbagai warna bahan transparant.</p>
+                    <strong>Harga: Rp 30.000</strong>
+                </a>
+                <button class="add-to-cart-button" onclick="addToCart('Softcase Cinnamon Transparant', 30000, 'beranda6.jpg')">Tambahkan ke Keranjang</button>
+            </article>
+            <!-- Tambahkan produk lain di sini -->
+        </section>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Produk berhasil ditambahkan ke keranjang!</div>
+    
+    <footer>
+        <p>&copy; 2024 RF Casing. Semua hak dilindungi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

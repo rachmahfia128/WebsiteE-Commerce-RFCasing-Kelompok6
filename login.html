@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS Anda -->
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <div id="loginMessage" class="message"></div>
+        <p>Belum punya akun? <a href="register.html">Daftar di sini</a></p> <!-- Link ke halaman pendaftaran -->
+    </div>
+
+    <script src="login.js"></script> <!-- Link ke file JavaScript Anda -->
+</body>
+</html>
